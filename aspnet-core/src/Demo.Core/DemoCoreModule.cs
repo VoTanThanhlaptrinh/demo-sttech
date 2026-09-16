@@ -1,4 +1,4 @@
-﻿using Abp.Localization;
+using Abp.Localization;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using Abp.Runtime.Security;
@@ -40,6 +40,15 @@ public class DemoCoreModule : AbpModule
 
         Configuration.Settings.SettingEncryptionConfiguration.DefaultPassPhrase = DemoConsts.DefaultPassPhrase;
         SimpleStringCipher.DefaultPassPhrase = DemoConsts.DefaultPassPhrase;
+
+        // Bật Entity History cho FrequentlyAskedQuestion
+        Configuration.EntityHistory.IsEnabled = true;
+        Configuration.EntityHistory.Selectors.Add(
+            new Abp.NamedTypeSelector(
+                "FrequentlyAskedQuestionEntityHistory",
+                type => typeof(Demo.Faqs.FrequentlyAskedQuestion).IsAssignableFrom(type)
+            )
+        );
     }
 
     public override void Initialize()
