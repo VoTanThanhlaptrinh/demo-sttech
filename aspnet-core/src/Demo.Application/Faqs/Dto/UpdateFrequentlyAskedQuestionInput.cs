@@ -54,7 +54,7 @@ public class UpdateFrequentlyAskedQuestionInput : EntityDto<int>, IShouldNormali
     }
 
     /// <summary>
-    /// Kiểm tra tính hợp lệ của dữ liệu đầu vào (không truy vấn CSDL)
+    /// Kiểm tra tính hợp lệ của dữ liệu đầu vào
     /// </summary>
     public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
     {
