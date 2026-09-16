@@ -5,8 +5,8 @@ namespace Demo.Faqs;
 public enum FaqStatus
 {
     [Description("Công khai")]
-    Public = 1,
+    Published = 1,
 
     [Description("Ẩn")]
-    Private = 2
+    Hidden = 2
 }

@@ -35,11 +35,10 @@ public class DemoDbContext : AbpZeroDbContext<Tenant, Role, User, DemoDbContext>
 
             b.Property(x => x.Status)
                 .IsRequired()
-                .HasDefaultValue(FaqStatus.Public);
+                .HasDefaultValue(FaqStatus.Hidden);
 
-            b.Property(x => x.DisplayOrder)
-                .IsRequired()
-                .HasDefaultValue(0);
+            b.Property(x => x.SortOrder)
+                .IsRequired(false);
 
             // Ràng buộc: Không được trùng hoàn toàn với câu hỏi chưa bị xóa
             b.HasIndex(x => x.Question)

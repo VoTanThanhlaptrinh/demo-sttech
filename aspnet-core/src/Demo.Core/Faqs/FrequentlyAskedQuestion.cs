@@ -15,7 +15,7 @@ public class FrequentlyAskedQuestion : FullAuditedEntity<int>
     [StringLength(FrequentlyAskedQuestionConsts.MaxAnswerLength)]
     public string Answer { get; set; }
 
-    public FaqStatus Status { get; set; } = FaqStatus.Public;
+    public FaqStatus Status { get; set; } = FaqStatus.Hidden;
 
     [Range(1, int.MaxValue)]
     public int? SortOrder { get; set; }
