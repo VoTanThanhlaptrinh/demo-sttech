@@ -1,4 +1,4 @@
-﻿namespace Demo.Web.Startup;
+namespace Demo.Web.Startup;
 
 public class PageNames
 {
@@ -7,4 +7,5 @@ public class PageNames
     public const string Tenants = "Tenants";
     public const string Users = "Users";
     public const string Roles = "Roles";
+    public const string Faq = "Faq";
 }

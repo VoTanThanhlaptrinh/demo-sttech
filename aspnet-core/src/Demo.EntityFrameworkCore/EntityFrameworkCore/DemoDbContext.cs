@@ -44,6 +44,8 @@ public class DemoDbContext : AbpZeroDbContext<Tenant, Role, User, DemoDbContext>
             b.HasIndex(x => x.Question)
                 .IsUnique()
                 .HasFilter("[IsDeleted] = 0");
+
+            b.HasIndex(x => x.CreationTime);
         });
     }
 }

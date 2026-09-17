@@ -1,4 +1,4 @@
-﻿using Abp.Application.Navigation;
+using Abp.Application.Navigation;
 using Abp.Authorization;
 using Abp.Localization;
 using Demo.Authorization;
@@ -52,6 +52,13 @@ public class DemoNavigationProvider : NavigationProvider
                     url: "Roles",
                     icon: "fas fa-theater-masks",
                     permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Roles)
+                )
+            ).AddItem(
+                new MenuItemDefinition(
+                    PageNames.Faq,
+                    new FixedLocalizableString("Quản lý FAQ"),
+                    url: "Faq",
+                    icon: "fas fa-question-circle"
                 )
             )
             .AddItem( // Menu items below is just for demonstration!

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
+using Abp.Domain.Entities;
 using Demo.Controllers;
 using Demo.Faqs;
 using Demo.Faqs.Dto;
@@ -47,15 +48,41 @@ namespace Demo.Web.Controllers
             return attributes.Length > 0 ? attributes[0].Description : value.ToString();
         }
 
+        public ActionResult CreateModal()
+        {
+            return PartialView("_CreateModal");
+        }
+
         public async Task<ActionResult> EditModal(int faqId)
         {
-            var output = await _faqAppService.GetAsync(new EntityDto<int>(faqId));
-            var model = new EditFaqModalViewModel
+            try
             {
-                Faq = output
-            };
-            
-            return PartialView("_EditModal", model);
+                var output = await _faqAppService.GetAsync(new EntityDto<int>(faqId));
+                
+                var model = new EditFaqModalViewModel
+                {
+                    Faq = output
+                };
+                
+                return PartialView("_EditModal", model);
+            }
+            catch (EntityNotFoundException)
+            {
+                return NotFound("Câu hỏi thường gặp không tồn tại hoặc đã bị xóa.");
+            }
+        }
+
+        public async Task<ActionResult> ViewModal(int faqId)
+        {
+            try
+            {
+                var output = await _faqAppService.GetAsync(new EntityDto<int>(faqId));
+                return PartialView("_ViewModal", output);
+            }
+            catch (EntityNotFoundException)
+            {
+                return NotFound("Câu hỏi thường gặp không tồn tại hoặc đã bị xóa.");
+            }
         }
     }
 }

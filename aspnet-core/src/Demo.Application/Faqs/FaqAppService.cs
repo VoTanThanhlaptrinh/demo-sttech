@@ -24,6 +24,11 @@ namespace Demo.Faqs
                 .WhereIf(input.Status.HasValue, x => x.Status == input.Status);
         }
 
+        protected override IQueryable<FrequentlyAskedQuestion> ApplySorting(IQueryable<FrequentlyAskedQuestion> query, PagedFaqResultRequestDto input)
+        {
+            return query.OrderByDescending(x => x.CreationTime);
+        }
+
         public override async Task<FrequentlyAskedQuestionDto> CreateAsync(CreateFrequentlyAskedQuestionInput input)
         {
             await CheckDuplicateQuestionAsync(input.Question, null);
