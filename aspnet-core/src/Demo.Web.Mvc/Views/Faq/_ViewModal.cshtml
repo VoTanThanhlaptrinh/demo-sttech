@@ -1,0 +1,52 @@
+@using Demo.Faqs
+@using Demo.Faqs.Dto
+@model FrequentlyAskedQuestionDto
+@{
+    Layout = null;
+}
+<div class="modal fade" id="FaqViewModal" tabindex="-1" role="dialog" aria-labelledby="FaqViewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="FaqViewModalLabel">Chi tiết câu hỏi thường gặp</h5>
+                <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-4">
+                    <label class="text-muted small text-uppercase font-weight-bold fw-bold d-block mb-1">Câu hỏi</label>
+                    <div class="h5 font-weight-bold fw-bold text-dark mb-0">
+                        @Model.Question
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="text-muted small text-uppercase font-weight-bold fw-bold d-block mb-1">Trạng thái</label>
+                    <div>
+                        @if (Model.Status == FaqStatus.Published)
+                        {
+                            <span class="badge bg-success badge-success px-3 py-2">
+                                <i class="fas fa-check-circle me-1"></i> Công khai
+                            </span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary badge-secondary px-3 py-2">
+                                <i class="fas fa-eye-slash me-1"></i> Đang ẩn
+                            </span>
+                        }
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <label class="text-muted small text-uppercase font-weight-bold fw-bold d-block mb-1">Câu trả lời</label>
+                    <div class="p-3 bg-light rounded border faq-view-answer">@Model.Answer</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+@using Demo.Faqs
+@{
+    Layout = null;
+}
+<div class="modal fade" id="FaqCreateModal" tabindex="-1" role="dialog" aria-labelledby="FaqCreateModalLabel" aria-hidden="true" data-backdrop="static" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="FaqCreateModalLabel">Thêm câu hỏi thường gặp</h5>
+                <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="FaqCreateForm" name="FaqCreateForm" role="form" novalidate="novalidate">
+                <div class="modal-body">
+                    <div class="form-group mb-3">
+                        <label for="CreateQuestion" class="form-label font-weight-bold fw-semibold">
+                            Câu hỏi <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" 
+                               id="CreateQuestion" 
+                               name="Question" 
+                               class="form-control" 
+                               placeholder="Nhập nội dung câu hỏi..." 
+                               maxlength="500" 
+                               autocomplete="off"
+                               required />
+                        <div class="d-flex justify-content-between align-items-center mt-1">
+                            <span class="text-danger error-msg small" data-field="Question"></span>
+                            <span class="text-muted small char-counter" data-for="CreateQuestion">0/500</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="CreateAnswer" class="form-label font-weight-bold fw-semibold">
+                            Câu trả lời <span class="text-danger">*</span>
+                        </label>
+                        <textarea id="CreateAnswer" 
+                                  name="Answer" 
+                                  class="form-control" 
+                                  rows="6" 
+                                  placeholder="Nhập nội dung câu trả lời chi tiết..." 
+                                  maxlength="4000" 
+                                  required></textarea>
+                        <div class="d-flex justify-content-between align-items-center mt-1">
+                            <span class="text-danger error-msg small" data-field="Answer"></span>
+                            <span class="text-muted small char-counter" data-for="CreateAnswer">0/4000</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label for="CreateStatus" class="form-label font-weight-bold fw-semibold">
+                            Trạng thái <span class="text-danger">*</span>
+                        </label>
+                        <select id="CreateStatus" name="Status" class="form-select form-control">
+                            <option value="@((int)FaqStatus.Hidden)" selected>Đang ẩn</option>
+                            <option value="@((int)FaqStatus.Published)">Công khai</option>
+                        </select>
+                        <span class="text-danger error-msg small" data-field="Status"></span>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-secondary close-button" data-bs-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary save-button" id="SaveCreateFaqBtn">
+                        <i class="fas fa-save me-1"></i> Lưu
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

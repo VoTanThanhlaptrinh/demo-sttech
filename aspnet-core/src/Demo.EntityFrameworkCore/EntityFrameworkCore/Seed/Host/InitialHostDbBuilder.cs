@@ -1,4 +1,4 @@
-﻿namespace Demo.EntityFrameworkCore.Seed.Host;
+namespace Demo.EntityFrameworkCore.Seed.Host;
 
 public class InitialHostDbBuilder
 {
@@ -15,6 +15,7 @@ public class InitialHostDbBuilder
         new DefaultLanguagesCreator(_context).Create();
         new HostRoleAndUserCreator(_context).Create();
         new DefaultSettingsCreator(_context).Create();
+        new DefaultFaqCreator(_context).Create();
 
         _context.SaveChanges();
     }
