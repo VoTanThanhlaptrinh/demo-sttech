@@ -81,7 +81,7 @@ app.faq.table = (function ($) {
                     className: 'align-middle',
                     render: function (data, type, row) {
                         var safeQuestion = app.faq.helpers.htmlEncode(data);
-                        return '<div class="faq-question-title">' + safeQuestion + '</div>';
+                        return '<div class="faq-question-title" title="' + safeQuestion + '">' + safeQuestion + '</div>';
                     }
                 },
                 {

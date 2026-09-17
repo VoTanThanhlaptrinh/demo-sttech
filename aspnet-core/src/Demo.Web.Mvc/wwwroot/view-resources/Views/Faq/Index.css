@@ -1,6 +1,7 @@
 /* FAQ Management Stylesheet */
 
-/* Clamp FAQ answer to ~2 lines with ellipsis */
+/* Shared text clamping for Question and Answer */
+.faq-question-title,
 .faq-answer-clamped {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -10,6 +11,9 @@
     line-height: 1.5;
     max-height: 3em;
     word-break: break-word;
+}
+
+.faq-answer-clamped {
     color: #495057;
 }
 
@@ -17,8 +21,6 @@
 .faq-question-title {
     font-weight: 600;
     color: #212529;
-    line-height: 1.4;
-    word-break: break-word;
 }
 
 /* Action Dropdown 3 dots */

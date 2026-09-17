@@ -3,7 +3,7 @@ app.faq = app.faq || {};
 
 (function ($) {
     app.faq.service = abp.services.app.faq;
-    
+
     // Helpers
     app.faq.helpers = {
         htmlEncode: function (value) {
@@ -19,13 +19,6 @@ app.faq = app.faq || {};
         },
         hideModal: function ($modal) {
             if (window.bootstrap && window.bootstrap.Modal) {
-                var modalInstance = window.bootstrap.Modal.getInstance($modal[0]);
-                if (modalInstance) {
-                    modalInstance.hide();
-                } else {
-                    $modal.modal('hide');
-                }
-            } else {
                 $modal.modal('hide');
             }
         },

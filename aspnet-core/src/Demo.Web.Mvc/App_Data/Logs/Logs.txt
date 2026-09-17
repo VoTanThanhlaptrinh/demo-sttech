@@ -12199,3 +12199,815 @@ INFO  2026-09-17 10:53:05,885 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics -
 INFO  2026-09-17 10:53:05,891 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
 DEBUG 2026-09-17 10:53:05,993 [20   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"cNHzmlZ4Y8UBNrRAgO5VBA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T10:53:05.991896+07:00","Properties":{}}
 DEBUG 2026-09-17 10:53:06,024 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: cNHzmlZ4Y8UBNrRAgO5VBA
+INFO  2026-09-17 10:56:06,734 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq - - -
+INFO  2026-09-17 10:56:06,764 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:06,765 [20   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:56:06,802 [20   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-09-17 10:56:06,845 [20   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 43.5112ms.
+INFO  2026-09-17 10:56:06,845 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc) in 80.2155ms
+INFO  2026-09-17 10:56:06,845 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:06,846 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq - 200 - text/html;+charset=utf-8 112.3853ms
+DEBUG 2026-09-17 10:56:06,864 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: cNHzmlZ4Y8UBNrRAgO5VBA
+INFO  2026-09-17 10:56:06,865 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2026-09-17 10:56:06,865 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=PXDFJODY9FjkoMXQ_KJA1g - 101 - - 180979.5033ms
+INFO  2026-09-17 10:56:07,035 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252389569796265 - - -
+INFO  2026-09-17 10:56:07,035 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252389569796265 - - -
+INFO  2026-09-17 10:56:07,043 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:07,044 [20   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:07,044 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:07,045 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:07,047 [14   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2026-09-17 10:56:07,048 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.3262ms
+INFO  2026-09-17 10:56:07,048 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:07,048 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252389569796265 - 200 11781 application/x-javascript 13.1006ms
+INFO  2026-09-17 10:56:07,063 [20   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2026-09-17 10:56:07,064 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 20.0888ms
+INFO  2026-09-17 10:56:07,064 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:07,064 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252389569796265 - 200 23721 application/x-javascript;+charset=utf-8 28.9875ms
+INFO  2026-09-17 10:56:07,096 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/ErrorHandler.js?v=jA6pNFGodYuNG8BESsh7Brxu_o3Z_GBsxyU8O3Y6fwY - - -
+INFO  2026-09-17 10:56:07,096 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Table.js?v=xx5DiyEJQ_oofSF5lIngUEBH7rQkf86_rxS6-_r14N8 - - -
+INFO  2026-09-17 10:56:07,097 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Table.js was not modified
+INFO  2026-09-17 10:56:07,097 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Table.js?v=xx5DiyEJQ_oofSF5lIngUEBH7rQkf86_rxS6-_r14N8 - 304 - text/javascript 0.5702ms
+INFO  2026-09-17 10:56:07,097 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/ErrorHandler.js was not modified
+INFO  2026-09-17 10:56:07,097 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/ErrorHandler.js?v=jA6pNFGodYuNG8BESsh7Brxu_o3Z_GBsxyU8O3Y6fwY - 304 - text/javascript 1.1330ms
+INFO  2026-09-17 10:56:07,114 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Edit.js?v=n1uNsrum_Xz2vktF6ZqCNbacRH7bOC6biHb_7O_dsdQ - - -
+INFO  2026-09-17 10:56:07,114 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Create.js?v=jyJOR1iOLpHTYxlcjmHgVYeIupPls-fZdOpvu7xUgKE - - -
+INFO  2026-09-17 10:56:07,114 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Create.js was not modified
+INFO  2026-09-17 10:56:07,114 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Edit.js was not modified
+INFO  2026-09-17 10:56:07,115 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Create.js?v=jyJOR1iOLpHTYxlcjmHgVYeIupPls-fZdOpvu7xUgKE - 304 - text/javascript 0.9322ms
+INFO  2026-09-17 10:56:07,115 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Edit.js?v=n1uNsrum_Xz2vktF6ZqCNbacRH7bOC6biHb_7O_dsdQ - 304 - text/javascript 1.3875ms
+INFO  2026-09-17 10:56:07,155 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 10:56:07,162 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:07,162 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:07,162 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 7.0380ms
+INFO  2026-09-17 10:56:07,167 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-09-17 10:56:07,168 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - - -
+INFO  2026-09-17 10:56:07,168 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=cu34JBbKPJu3D5W2XPb_c_2nkcz3kKTClpNCjwViuHw - - -
+INFO  2026-09-17 10:56:07,168 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript;+charset=utf-8 0.8869ms
+INFO  2026-09-17 10:56:07,171 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Index.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Index.js'
+INFO  2026-09-17 10:56:07,172 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=cu34JBbKPJu3D5W2XPb_c_2nkcz3kKTClpNCjwViuHw - 200 2439 text/javascript 3.9570ms
+INFO  2026-09-17 10:56:07,181 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=0mUlMGzpEzGxQOy6pg5AXQ - - -
+INFO  2026-09-17 10:56:07,185 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2026-09-17 10:56:07,187 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 19.7804ms
+DEBUG 2026-09-17 10:56:07,316 [3    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"xav2suRkpdhkeiRZE5U0-w","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T10:56:07.3158505+07:00","Properties":{}}
+INFO  2026-09-17 10:56:07,316 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - application/json -
+INFO  2026-09-17 10:56:07,320 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 10:56:07,321 [20   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Faq"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Demo.Faqs.Dto.FrequentlyAskedQuestionDto]] GetAllAsync(Demo.Faqs.Dto.PagedFaqResultRequestDto) on controller Demo.Faqs.FaqAppService (Demo.Application).
+INFO  2026-09-17 10:56:07,356 [3    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-09-17 10:56:07,357 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application) in 35.1684ms
+INFO  2026-09-17 10:56:07,357 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 10:56:07,357 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - 200 - application/json;+charset=utf-8 40.8917ms
+DEBUG 2026-09-17 10:56:07,445 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: xav2suRkpdhkeiRZE5U0-w
+INFO  2026-09-17 10:56:09,340 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq - - -
+INFO  2026-09-17 10:56:09,344 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:09,345 [3    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:56:09,352 [3    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-09-17 10:56:09,371 [3    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 19.2814ms.
+INFO  2026-09-17 10:56:09,371 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc) in 25.9593ms
+INFO  2026-09-17 10:56:09,371 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:09,372 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq - 200 - text/html;+charset=utf-8 31.1074ms
+DEBUG 2026-09-17 10:56:09,382 [3    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: xav2suRkpdhkeiRZE5U0-w
+INFO  2026-09-17 10:56:09,382 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2026-09-17 10:56:09,382 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=0mUlMGzpEzGxQOy6pg5AXQ - 101 - - 2201.2274ms
+INFO  2026-09-17 10:56:09,436 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252389569796265 - - -
+INFO  2026-09-17 10:56:09,441 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:09,442 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252389569796265 - - -
+INFO  2026-09-17 10:56:09,443 [3    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:09,445 [3    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2026-09-17 10:56:09,446 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.6431ms
+INFO  2026-09-17 10:56:09,446 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:09,446 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252389569796265 - 200 11781 application/x-javascript 9.6934ms
+INFO  2026-09-17 10:56:09,447 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:09,448 [20   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:09,466 [20   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2026-09-17 10:56:09,466 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 18.4415ms
+INFO  2026-09-17 10:56:09,466 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:09,467 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252389569796265 - 200 23721 application/x-javascript;+charset=utf-8 24.5121ms
+INFO  2026-09-17 10:56:09,486 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=wDo9qlaO1zpjTEV0ONriEZglp7MIEm_P5XDsgb65z5E - - -
+INFO  2026-09-17 10:56:09,488 [20   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Index.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Index.js'
+INFO  2026-09-17 10:56:09,488 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=wDo9qlaO1zpjTEV0ONriEZglp7MIEm_P5XDsgb65z5E - 200 2251 text/javascript 1.7958ms
+INFO  2026-09-17 10:56:09,518 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 10:56:09,521 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:09,522 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:09,522 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 3.6888ms
+INFO  2026-09-17 10:56:09,535 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-09-17 10:56:09,536 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript;+charset=utf-8 0.7208ms
+INFO  2026-09-17 10:56:09,536 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - - -
+INFO  2026-09-17 10:56:09,550 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=lxLYVrFMyUUpg_ufwdv4vA - - -
+INFO  2026-09-17 10:56:09,556 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2026-09-17 10:56:09,559 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 23.4060ms
+INFO  2026-09-17 10:56:09,616 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - application/json -
+DEBUG 2026-09-17 10:56:09,617 [3    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"uf-Fe2pxIQaLfq1OyD9IPA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T10:56:09.616872+07:00","Properties":{}}
+INFO  2026-09-17 10:56:09,618 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 10:56:09,619 [20   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Faq"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Demo.Faqs.Dto.FrequentlyAskedQuestionDto]] GetAllAsync(Demo.Faqs.Dto.PagedFaqResultRequestDto) on controller Demo.Faqs.FaqAppService (Demo.Application).
+INFO  2026-09-17 10:56:09,633 [20   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-09-17 10:56:09,634 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application) in 14.6771ms
+INFO  2026-09-17 10:56:09,634 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 10:56:09,634 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - 200 - application/json;+charset=utf-8 17.8726ms
+DEBUG 2026-09-17 10:56:09,640 [3    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: uf-Fe2pxIQaLfq1OyD9IPA
+INFO  2026-09-17 10:56:17,475 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq - - -
+INFO  2026-09-17 10:56:17,479 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:17,479 [3    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:56:17,486 [3    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-09-17 10:56:17,507 [3    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 21.4248ms.
+INFO  2026-09-17 10:56:17,508 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc) in 28.2261ms
+INFO  2026-09-17 10:56:17,508 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:17,509 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq - 200 - text/html;+charset=utf-8 34.5381ms
+DEBUG 2026-09-17 10:56:17,519 [3    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: uf-Fe2pxIQaLfq1OyD9IPA
+INFO  2026-09-17 10:56:17,519 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2026-09-17 10:56:17,519 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=lxLYVrFMyUUpg_ufwdv4vA - 101 - - 7969.2442ms
+INFO  2026-09-17 10:56:17,555 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252389569796265 - - -
+INFO  2026-09-17 10:56:17,555 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252389569796265 - - -
+INFO  2026-09-17 10:56:17,558 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:17,559 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:17,559 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:17,559 [3    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:17,561 [22   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2026-09-17 10:56:17,561 [22   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 2.156ms
+INFO  2026-09-17 10:56:17,561 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:17,562 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252389569796265 - 200 11781 application/x-javascript 6.7140ms
+INFO  2026-09-17 10:56:17,570 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - - -
+INFO  2026-09-17 10:56:17,571 [20   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Index.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Index.js'
+INFO  2026-09-17 10:56:17,571 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - 200 2188 text/javascript 1.2269ms
+INFO  2026-09-17 10:56:17,576 [3    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2026-09-17 10:56:17,577 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 17.5818ms
+INFO  2026-09-17 10:56:17,577 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:17,578 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252389569796265 - 200 23721 application/x-javascript;+charset=utf-8 22.5545ms
+INFO  2026-09-17 10:56:17,603 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 10:56:17,607 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:17,607 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-09-17 10:56:17,608 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:17,608 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 4.7371ms
+INFO  2026-09-17 10:56:17,608 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript;+charset=utf-8 0.9595ms
+INFO  2026-09-17 10:56:17,614 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - - -
+INFO  2026-09-17 10:56:17,625 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 11.1642ms
+INFO  2026-09-17 10:56:17,625 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=EFrWyftGO1KUWi-jp2xa4w - - -
+INFO  2026-09-17 10:56:17,629 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2026-09-17 10:56:17,685 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - application/json -
+INFO  2026-09-17 10:56:17,687 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 10:56:17,688 [3    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Faq"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Demo.Faqs.Dto.FrequentlyAskedQuestionDto]] GetAllAsync(Demo.Faqs.Dto.PagedFaqResultRequestDto) on controller Demo.Faqs.FaqAppService (Demo.Application).
+INFO  2026-09-17 10:56:17,702 [3    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-09-17 10:56:17,702 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application) in 14.1484ms
+INFO  2026-09-17 10:56:17,702 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 10:56:17,702 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - 200 - application/json;+charset=utf-8 17.5041ms
+DEBUG 2026-09-17 10:56:17,713 [3    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"hqgSZumA6Glxd1jO7Wg92w","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T10:56:17.7133561+07:00","Properties":{}}
+DEBUG 2026-09-17 10:56:17,770 [3    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: hqgSZumA6Glxd1jO7Wg92w
+INFO  2026-09-17 10:56:19,124 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq - - -
+INFO  2026-09-17 10:56:19,128 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:19,129 [20   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:56:19,136 [20   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-09-17 10:56:19,151 [20   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 14.6848ms.
+INFO  2026-09-17 10:56:19,151 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc) in 22.0458ms
+INFO  2026-09-17 10:56:19,151 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:19,151 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq - 200 - text/html;+charset=utf-8 27.2002ms
+DEBUG 2026-09-17 10:56:19,162 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: hqgSZumA6Glxd1jO7Wg92w
+INFO  2026-09-17 10:56:19,163 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2026-09-17 10:56:19,163 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=EFrWyftGO1KUWi-jp2xa4w - 101 - - 1537.4764ms
+INFO  2026-09-17 10:56:19,198 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252389569796265 - - -
+INFO  2026-09-17 10:56:19,199 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252389569796265 - - -
+INFO  2026-09-17 10:56:19,200 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:19,200 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:19,201 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:19,201 [3    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:19,202 [22   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2026-09-17 10:56:19,203 [22   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 1.8254ms
+INFO  2026-09-17 10:56:19,203 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:19,203 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252389569796265 - 200 11781 application/x-javascript 4.8856ms
+INFO  2026-09-17 10:56:19,214 [3    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2026-09-17 10:56:19,215 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 13.5052ms
+INFO  2026-09-17 10:56:19,215 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:19,215 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252389569796265 - 200 23721 application/x-javascript;+charset=utf-8 16.4513ms
+INFO  2026-09-17 10:56:19,216 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=_WgsI882uFvdUWCQLw2KXpbIgVRqotupyExncPPJD-A - - -
+INFO  2026-09-17 10:56:19,217 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Index.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Index.js'
+INFO  2026-09-17 10:56:19,218 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=_WgsI882uFvdUWCQLw2KXpbIgVRqotupyExncPPJD-A - 200 2187 text/javascript 1.1694ms
+INFO  2026-09-17 10:56:19,246 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 10:56:19,248 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-09-17 10:56:19,249 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript;+charset=utf-8 0.8125ms
+INFO  2026-09-17 10:56:19,249 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - - -
+INFO  2026-09-17 10:56:19,250 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:19,251 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:19,252 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 6.3686ms
+INFO  2026-09-17 10:56:19,267 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 17.3718ms
+INFO  2026-09-17 10:56:19,351 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=uQ9ztvVDbFblv7YRas5y7w - - -
+INFO  2026-09-17 10:56:19,355 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2026-09-17 10:56:19,424 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"K2-d0wcLKnwosVWiBStVTQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T10:56:19.4240259+07:00","Properties":{}}
+DEBUG 2026-09-17 10:56:19,492 [3    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: K2-d0wcLKnwosVWiBStVTQ
+INFO  2026-09-17 10:56:19,983 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq - - -
+INFO  2026-09-17 10:56:19,987 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:19,988 [20   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:56:19,997 [20   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-09-17 10:56:20,015 [20   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 18.7577ms.
+INFO  2026-09-17 10:56:20,016 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc) in 27.5002ms
+INFO  2026-09-17 10:56:20,016 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:20,016 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq - 200 - text/html;+charset=utf-8 32.8920ms
+DEBUG 2026-09-17 10:56:20,026 [20   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: K2-d0wcLKnwosVWiBStVTQ
+INFO  2026-09-17 10:56:20,026 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2026-09-17 10:56:20,026 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=uQ9ztvVDbFblv7YRas5y7w - 101 - - 675.2878ms
+INFO  2026-09-17 10:56:20,062 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252389569796265 - - -
+INFO  2026-09-17 10:56:20,064 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252389569796265 - - -
+INFO  2026-09-17 10:56:20,066 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:20,066 [20   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:20,067 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:20,067 [3    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:20,068 [20   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2026-09-17 10:56:20,068 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 1.8505ms
+INFO  2026-09-17 10:56:20,068 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:20,069 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252389569796265 - 200 11781 application/x-javascript 6.5794ms
+INFO  2026-09-17 10:56:20,083 [3    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2026-09-17 10:56:20,084 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 16.0539ms
+INFO  2026-09-17 10:56:20,084 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:20,084 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252389569796265 - 200 23721 application/x-javascript;+charset=utf-8 20.3671ms
+INFO  2026-09-17 10:56:20,096 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - - -
+INFO  2026-09-17 10:56:20,097 [3    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Index.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Index.js'
+INFO  2026-09-17 10:56:20,098 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - 200 2188 text/javascript 1.4325ms
+INFO  2026-09-17 10:56:20,134 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 10:56:20,139 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - - -
+INFO  2026-09-17 10:56:20,139 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-09-17 10:56:20,141 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:20,143 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:20,143 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 8.8580ms
+INFO  2026-09-17 10:56:20,145 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript;+charset=utf-8 5.6802ms
+INFO  2026-09-17 10:56:20,161 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 21.7602ms
+INFO  2026-09-17 10:56:20,215 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - application/json -
+INFO  2026-09-17 10:56:20,218 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 10:56:20,219 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Faq"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Demo.Faqs.Dto.FrequentlyAskedQuestionDto]] GetAllAsync(Demo.Faqs.Dto.PagedFaqResultRequestDto) on controller Demo.Faqs.FaqAppService (Demo.Application).
+INFO  2026-09-17 10:56:20,231 [22   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-09-17 10:56:20,232 [22   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application) in 12.9751ms
+INFO  2026-09-17 10:56:20,232 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 10:56:20,232 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - 200 - application/json;+charset=utf-8 16.5468ms
+INFO  2026-09-17 10:56:20,255 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=vsE8sHIV6AZ8nd8Y1TWDoQ - - -
+INFO  2026-09-17 10:56:20,256 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2026-09-17 10:56:20,342 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"XBa25j-g6dxBVPvX1vnh1w","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T10:56:20.3386572+07:00","Properties":{}}
+DEBUG 2026-09-17 10:56:20,373 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: XBa25j-g6dxBVPvX1vnh1w
+DEBUG 2026-09-17 10:56:28,348 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2026-09-17 10:56:28,359 [2    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2026-09-17 10:56:28,374 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.Web.Startup.DemoWebMvcModule, Demo.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,381 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.DemoWebCoreModule, Demo.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,381 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.DemoApplicationModule, Demo.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,381 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.DemoCoreModule, Demo.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,382 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,382 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,382 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,383 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,383 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.EntityFrameworkCore.DemoEntityFrameworkModule, Demo.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,383 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,384 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,384 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,384 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,384 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,384 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:28,386 [2    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2026-09-17 10:56:28,421 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-09-17 10:56:28,422 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-09-17 10:56:28,422 [2    ] o.Configuration.LanguageManagementConfig - Converted Demo (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-09-17 10:56:28,422 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-09-17 10:56:28,718 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Demo.EntityFrameworkCore.DemoDbContext, Demo.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 10:56:29,104 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2026-09-17 10:56:29,172 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2026-09-17 10:56:29,182 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2026-09-17 10:56:29,189 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Demo
+DEBUG 2026-09-17 10:56:29,194 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2026-09-17 10:56:29,204 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2026-09-17 10:56:29,207 [2    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Demo.MultiTenancy.Tenant, Demo.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Demo.Authorization.Users.User, Demo.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2026-09-17 10:56:29,229 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2026-09-17 10:56:29,229 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Users.Dto.CreateUserDto
+DEBUG 2026-09-17 10:56:29,232 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Users.Dto.UserDto
+DEBUG 2026-09-17 10:56:29,233 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2026-09-17 10:56:29,233 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Sessions.Dto.UserLoginInfoDto
+DEBUG 2026-09-17 10:56:29,233 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Roles.Dto.PermissionDto
+DEBUG 2026-09-17 10:56:29,233 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2026-09-17 10:56:29,233 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.MultiTenancy.Dto.TenantDto
+DEBUG 2026-09-17 10:56:29,234 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Faqs.Dto.CreateFrequentlyAskedQuestionInput
+DEBUG 2026-09-17 10:56:29,234 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Faqs.Dto.FrequentlyAskedQuestionDto
+DEBUG 2026-09-17 10:56:29,234 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Faqs.Dto.UpdateFrequentlyAskedQuestionInput
+DEBUG 2026-09-17 10:56:29,234 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2026-09-17 10:56:29,234 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Web.Models.Roles.EditRoleModalViewModel
+WARN  2026-09-17 10:56:30,306 [2    ] oft.EntityFrameworkCore.Model.Validation - The 'FaqStatus' property 'Status' on entity type 'FrequentlyAskedQuestion' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value '0', since this is the CLR default for the 'FaqStatus' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+INFO  2026-09-17 10:56:31,590 [2    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,fa,ja,zh-Hans
+INFO  2026-09-17 10:56:31,788 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 10:56:31,788 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/ - - -
+INFO  2026-09-17 10:56:31,846 [2    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2026-09-17 10:56:31,847 [2    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2026-09-17 10:56:31,847 [2    ] Microsoft.Hosting.Lifetime               - Content root path: D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc
+INFO  2026-09-17 10:56:31,903 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:31,909 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.HomeController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:31,920 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:31,928 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=Y8H-CvWPjll3PEk8oL9ocw - - -
+INFO  2026-09-17 10:56:31,931 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 135.9436ms
+INFO  2026-09-17 10:56:31,935 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2026-09-17 10:56:31,939 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Demo.Web.Controllers.HomeController (Demo.Web.Mvc).
+DEBUG 2026-09-17 10:56:31,989 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"qRIoTlt0G1Pd4sZVz16Qyw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T10:56:31.9653863+07:00","Properties":{}}
+INFO  2026-09-17 10:56:32,177 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-09-17 10:56:32,900 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 715.8407ms.
+INFO  2026-09-17 10:56:32,902 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.HomeController.Index (Demo.Web.Mvc) in 962.6019ms
+INFO  2026-09-17 10:56:32,903 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.HomeController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:32,911 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/ - 200 - text/html;+charset=utf-8 1124.2067ms
+INFO  2026-09-17 10:56:33,040 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252393892088663 - - -
+INFO  2026-09-17 10:56:33,040 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252393892088663 - - -
+INFO  2026-09-17 10:56:33,044 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - - -
+INFO  2026-09-17 10:56:33,047 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:33,047 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:33,048 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-09-17 10:56:33,052 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript;+charset=utf-8 4.5117ms
+INFO  2026-09-17 10:56:33,063 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:33,067 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:33,089 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 45.0114ms
+INFO  2026-09-17 10:56:33,115 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2026-09-17 10:56:33,116 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 48.8228ms
+INFO  2026-09-17 10:56:33,116 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:33,117 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252393892088663 - 200 11781 application/x-javascript 76.8151ms
+INFO  2026-09-17 10:56:33,167 [7    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2026-09-17 10:56:33,168 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 105.3273ms
+INFO  2026-09-17 10:56:33,169 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:33,169 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252393892088663 - 200 23721 application/x-javascript;+charset=utf-8 128.8925ms
+INFO  2026-09-17 10:56:33,237 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 10:56:33,243 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:33,245 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:33,246 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 8.5133ms
+INFO  2026-09-17 10:56:33,338 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=KO5w7ZTC69e9vvUITKQR0g - - -
+INFO  2026-09-17 10:56:33,402 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2026-09-17 10:56:33,550 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"75mWa_AVISs2Gf6k18beBQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T10:56:33.5497178+07:00","Properties":{}}
+DEBUG 2026-09-17 10:56:33,560 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 75mWa_AVISs2Gf6k18beBQ
+INFO  2026-09-17 10:56:44,068 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq - - -
+INFO  2026-09-17 10:56:44,075 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:44,077 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:56:44,108 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-09-17 10:56:44,220 [7    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 112.9694ms.
+INFO  2026-09-17 10:56:44,220 [7    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc) in 142.8009ms
+INFO  2026-09-17 10:56:44,220 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:44,221 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq - 200 - text/html;+charset=utf-8 152.6877ms
+DEBUG 2026-09-17 10:56:44,237 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 75mWa_AVISs2Gf6k18beBQ
+INFO  2026-09-17 10:56:44,240 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2026-09-17 10:56:44,240 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=KO5w7ZTC69e9vvUITKQR0g - 101 - - 10901.9774ms
+INFO  2026-09-17 10:56:44,272 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252393892088663 - - -
+INFO  2026-09-17 10:56:44,273 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252393892088663 - - -
+INFO  2026-09-17 10:56:44,277 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:44,278 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:44,278 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:44,279 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-09-17 10:56:44,280 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - - -
+INFO  2026-09-17 10:56:44,280 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript;+charset=utf-8 0.9704ms
+INFO  2026-09-17 10:56:44,281 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2026-09-17 10:56:44,281 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - - -
+INFO  2026-09-17 10:56:44,287 [16   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Index.js was not modified
+INFO  2026-09-17 10:56:44,289 [13   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2026-09-17 10:56:44,289 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - 304 - text/javascript 9.2917ms
+INFO  2026-09-17 10:56:44,289 [13   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 9.1801ms
+INFO  2026-09-17 10:56:44,290 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:44,290 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252393892088663 - 200 11781 application/x-javascript 17.9661ms
+INFO  2026-09-17 10:56:44,298 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 16.9512ms
+INFO  2026-09-17 10:56:44,301 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 10:56:44,302 [5    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2026-09-17 10:56:44,303 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 22.043ms
+INFO  2026-09-17 10:56:44,303 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 10:56:44,303 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252393892088663 - 200 23721 application/x-javascript;+charset=utf-8 30.3299ms
+INFO  2026-09-17 10:56:44,306 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:44,306 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 10:56:44,307 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 5.3310ms
+INFO  2026-09-17 10:56:44,352 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=LdkUxZ263JkaY-j2AJFkpg - - -
+INFO  2026-09-17 10:56:44,358 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2026-09-17 10:56:44,385 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - application/json -
+INFO  2026-09-17 10:56:44,388 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+DEBUG 2026-09-17 10:56:44,396 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"L2Vi0Xgsb_0mkBVolTfAwA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T10:56:44.3959547+07:00","Properties":{}}
+INFO  2026-09-17 10:56:44,397 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Faq"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Demo.Faqs.Dto.FrequentlyAskedQuestionDto]] GetAllAsync(Demo.Faqs.Dto.PagedFaqResultRequestDto) on controller Demo.Faqs.FaqAppService (Demo.Application).
+DEBUG 2026-09-17 10:56:44,408 [13   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: L2Vi0Xgsb_0mkBVolTfAwA
+INFO  2026-09-17 10:56:44,727 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-09-17 10:56:44,742 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application) in 344.5636ms
+INFO  2026-09-17 10:56:44,742 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 10:56:44,743 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - 200 - application/json;+charset=utf-8 357.7317ms
+INFO  2026-09-17 10:56:48,546 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq/CreateModal - application/json -
+INFO  2026-09-17 10:56:48,551 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:48,553 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "CreateModal", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateModal() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:56:48,563 [16   ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _CreateModal.
+INFO  2026-09-17 10:56:48,570 [16   ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _CreateModal executed in 7.4163ms.
+INFO  2026-09-17 10:56:48,570 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc) in 17.2497ms
+INFO  2026-09-17 10:56:48,570 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+WARN  2026-09-17 10:56:48,576 [16   ] ls.BrowserLink.Net.BrowserLinkMiddleware - Unable to configure Browser Link script injection on the response. 
+INFO  2026-09-17 10:56:48,576 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq/CreateModal - 200 - text/html;+charset=utf-8 30.3540ms
+INFO  2026-09-17 10:56:51,694 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq/EditModal?faqId=31 - application/json -
+INFO  2026-09-17 10:56:51,698 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.EditModal (Demo.Web.Mvc)'
+INFO  2026-09-17 10:56:51,701 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "EditModal", controller = "Faq", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] EditModal(Int32) on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:56:51,728 [8    ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _EditModal.
+INFO  2026-09-17 10:56:51,733 [8    ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _EditModal executed in 5.8609ms.
+INFO  2026-09-17 10:56:51,733 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.EditModal (Demo.Web.Mvc) in 32.2058ms
+INFO  2026-09-17 10:56:51,733 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.EditModal (Demo.Web.Mvc)'
+WARN  2026-09-17 10:56:51,734 [8    ] ls.BrowserLink.Net.BrowserLinkMiddleware - Unable to configure Browser Link script injection on the response. 
+INFO  2026-09-17 10:56:51,735 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq/EditModal?faqId=31 - 200 - text/html;+charset=utf-8 40.3803ms
+INFO  2026-09-17 10:56:55,974 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/.well-known/appspecific/com.chrome.devtools.json - - -
+INFO  2026-09-17 10:56:55,978 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/.well-known/appspecific/com.chrome.devtools.json - 404 - - 4.3533ms
+INFO  2026-09-17 10:56:55,979 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44312/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+INFO  2026-09-17 10:56:56,451 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/push.js.map - - -
+INFO  2026-09-17 10:56:56,453 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/push.js.map - 404 - - 2.2255ms
+INFO  2026-09-17 10:56:56,453 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44312/view-resources/Views/_Bundles/push.js.map, Response status code: 404
+INFO  2026-09-17 10:57:01,177 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq/CreateModal - application/json -
+INFO  2026-09-17 10:57:01,180 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+INFO  2026-09-17 10:57:01,181 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "CreateModal", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateModal() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:57:01,190 [16   ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _CreateModal.
+INFO  2026-09-17 10:57:01,191 [16   ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _CreateModal executed in 1.5376ms.
+INFO  2026-09-17 10:57:01,192 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc) in 10.5792ms
+INFO  2026-09-17 10:57:01,192 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+WARN  2026-09-17 10:57:01,193 [16   ] ls.BrowserLink.Net.BrowserLinkMiddleware - Unable to configure Browser Link script injection on the response. 
+INFO  2026-09-17 10:57:01,194 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq/CreateModal - 200 - text/html;+charset=utf-8 16.6688ms
+INFO  2026-09-17 10:57:24,472 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq/CreateModal - application/json -
+INFO  2026-09-17 10:57:24,475 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+INFO  2026-09-17 10:57:24,476 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "CreateModal", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateModal() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:57:24,488 [8    ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _CreateModal.
+INFO  2026-09-17 10:57:24,489 [8    ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _CreateModal executed in 0.822ms.
+INFO  2026-09-17 10:57:24,489 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc) in 12.5799ms
+INFO  2026-09-17 10:57:24,489 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+WARN  2026-09-17 10:57:24,489 [8    ] ls.BrowserLink.Net.BrowserLinkMiddleware - Unable to configure Browser Link script injection on the response. 
+INFO  2026-09-17 10:57:24,490 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq/CreateModal - 200 - text/html;+charset=utf-8 17.3475ms
+INFO  2026-09-17 10:57:28,335 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq/CreateModal - application/json -
+INFO  2026-09-17 10:57:28,338 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+INFO  2026-09-17 10:57:28,339 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "CreateModal", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateModal() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:57:28,344 [8    ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _CreateModal.
+INFO  2026-09-17 10:57:28,346 [8    ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _CreateModal executed in 1.3896ms.
+INFO  2026-09-17 10:57:28,346 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc) in 7.1046ms
+INFO  2026-09-17 10:57:28,346 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+WARN  2026-09-17 10:57:28,348 [8    ] ls.BrowserLink.Net.BrowserLinkMiddleware - Unable to configure Browser Link script injection on the response. 
+INFO  2026-09-17 10:57:28,349 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq/CreateModal - 200 - text/html;+charset=utf-8 13.5791ms
+INFO  2026-09-17 10:57:31,448 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq/CreateModal - application/json -
+INFO  2026-09-17 10:57:31,451 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+INFO  2026-09-17 10:57:31,452 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "CreateModal", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateModal() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:57:31,458 [8    ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _CreateModal.
+INFO  2026-09-17 10:57:31,459 [8    ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _CreateModal executed in 1.1822ms.
+INFO  2026-09-17 10:57:31,460 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc) in 7.6651ms
+INFO  2026-09-17 10:57:31,460 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+WARN  2026-09-17 10:57:31,461 [8    ] ls.BrowserLink.Net.BrowserLinkMiddleware - Unable to configure Browser Link script injection on the response. 
+INFO  2026-09-17 10:57:31,462 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq/CreateModal - 200 - text/html;+charset=utf-8 14.0830ms
+INFO  2026-09-17 10:57:39,890 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq/CreateModal - application/json -
+INFO  2026-09-17 10:57:39,895 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+INFO  2026-09-17 10:57:39,895 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "CreateModal", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateModal() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:57:39,902 [16   ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _CreateModal.
+INFO  2026-09-17 10:57:39,903 [16   ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _CreateModal executed in 0.9511ms.
+INFO  2026-09-17 10:57:39,904 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc) in 8.4028ms
+INFO  2026-09-17 10:57:39,904 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+WARN  2026-09-17 10:57:39,905 [16   ] ls.BrowserLink.Net.BrowserLinkMiddleware - Unable to configure Browser Link script injection on the response. 
+INFO  2026-09-17 10:57:39,906 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq/CreateModal - 200 - text/html;+charset=utf-8 15.4893ms
+INFO  2026-09-17 10:57:43,461 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq/CreateModal - application/json -
+INFO  2026-09-17 10:57:43,465 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+INFO  2026-09-17 10:57:43,466 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "CreateModal", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateModal() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:57:43,473 [16   ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _CreateModal.
+INFO  2026-09-17 10:57:43,474 [16   ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _CreateModal executed in 1.5902ms.
+INFO  2026-09-17 10:57:43,474 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc) in 8.4854ms
+INFO  2026-09-17 10:57:43,474 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.CreateModal (Demo.Web.Mvc)'
+WARN  2026-09-17 10:57:43,476 [16   ] ls.BrowserLink.Net.BrowserLinkMiddleware - Unable to configure Browser Link script injection on the response. 
+INFO  2026-09-17 10:57:43,477 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq/CreateModal - 200 - text/html;+charset=utf-8 15.7765ms
+INFO  2026-09-17 10:58:04,163 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq/ViewModal?faqId=30 - application/json -
+INFO  2026-09-17 10:58:04,168 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.ViewModal (Demo.Web.Mvc)'
+INFO  2026-09-17 10:58:04,173 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "ViewModal", controller = "Faq", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] ViewModal(Int32) on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 10:58:04,189 [8    ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _ViewModal.
+INFO  2026-09-17 10:58:04,196 [8    ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _ViewModal executed in 6.6503ms.
+INFO  2026-09-17 10:58:04,196 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.ViewModal (Demo.Web.Mvc) in 22.2598ms
+INFO  2026-09-17 10:58:04,196 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.ViewModal (Demo.Web.Mvc)'
+WARN  2026-09-17 10:58:04,196 [8    ] ls.BrowserLink.Net.BrowserLinkMiddleware - Unable to configure Browser Link script injection on the response. 
+INFO  2026-09-17 10:58:04,197 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq/ViewModal?faqId=30 - 200 - text/html;+charset=utf-8 33.3110ms
+INFO  2026-09-17 11:00:34,843 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?v=EXnHIkCiTw-PX_Hcvux33KxMXE6SmGbfsWNkiOQi7zM&__browserLink_refresh=25da01abc82c4f70bd9b7e168f5323c9 - - -
+INFO  2026-09-17 11:00:34,845 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?v=EXnHIkCiTw-PX_Hcvux33KxMXE6SmGbfsWNkiOQi7zM&__browserLink_refresh=1d46bdad97e545b59f54ef605fedde48 - - -
+INFO  2026-09-17 11:00:34,853 [23   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Index.css'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Index.css'
+INFO  2026-09-17 11:00:34,853 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Index.css'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Index.css'
+INFO  2026-09-17 11:00:34,854 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?v=EXnHIkCiTw-PX_Hcvux33KxMXE6SmGbfsWNkiOQi7zM&__browserLink_refresh=25da01abc82c4f70bd9b7e168f5323c9 - 200 4265 text/css 10.7616ms
+INFO  2026-09-17 11:00:34,854 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?v=EXnHIkCiTw-PX_Hcvux33KxMXE6SmGbfsWNkiOQi7zM&__browserLink_refresh=1d46bdad97e545b59f54ef605fedde48 - 200 4265 text/css 8.9667ms
+INFO  2026-09-17 11:00:35,078 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/clear-browser-cache - - -
+INFO  2026-09-17 11:00:35,078 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/clear-browser-cache - 200 - - 0.6911ms
+INFO  2026-09-17 11:00:35,080 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/clear-browser-cache - - -
+INFO  2026-09-17 11:00:35,081 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/clear-browser-cache - 200 - - 0.6211ms
+INFO  2026-09-17 11:00:36,169 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?nonce=1789617636165 - - -
+INFO  2026-09-17 11:00:36,169 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/shared-layout.min.css?nonce=1789617636162 - - -
+INFO  2026-09-17 11:00:36,170 [23   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Index.css'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Index.css'
+INFO  2026-09-17 11:00:36,171 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?nonce=1789617636165 - 200 4265 text/css 1.7547ms
+INFO  2026-09-17 11:00:36,178 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/img/favicon.ico?nonce=1789617636160 - - -
+INFO  2026-09-17 11:00:36,180 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/img/favicon.ico'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\img\favicon.ico'
+INFO  2026-09-17 11:00:36,180 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/img/favicon.ico?nonce=1789617636160 - 200 1150 image/x-icon 1.9603ms
+INFO  2026-09-17 11:00:36,181 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/_Bundles/shared-layout.min.css'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\_Bundles\shared-layout.min.css'
+INFO  2026-09-17 11:00:36,192 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/img/favicon.ico - - -
+INFO  2026-09-17 11:00:36,193 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/img/favicon.ico'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\img\favicon.ico'
+INFO  2026-09-17 11:00:36,194 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/img/favicon.ico - 200 1150 image/x-icon 1.3914ms
+INFO  2026-09-17 11:00:36,208 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/shared-layout.min.css?nonce=1789617636162 - 200 1698125 text/css 39.0042ms
+INFO  2026-09-17 11:00:45,929 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq - - -
+INFO  2026-09-17 11:00:45,941 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 11:00:45,942 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 11:00:45,952 [8    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-09-17 11:00:45,992 [8    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 40.9357ms.
+INFO  2026-09-17 11:00:45,993 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc) in 50.9736ms
+INFO  2026-09-17 11:00:45,993 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 11:00:45,994 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq - 200 - text/html;+charset=utf-8 64.9747ms
+INFO  2026-09-17 11:00:45,995 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq - - -
+INFO  2026-09-17 11:00:45,997 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 11:00:45,998 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 11:00:46,007 [8    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+DEBUG 2026-09-17 11:00:46,021 [8    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: qRIoTlt0G1Pd4sZVz16Qyw
+INFO  2026-09-17 11:00:46,022 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2026-09-17 11:00:46,022 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=Y8H-CvWPjll3PEk8oL9ocw - 101 - - 254093.8206ms
+INFO  2026-09-17 11:00:46,045 [8    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 38.0882ms.
+INFO  2026-09-17 11:00:46,045 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc) in 46.9508ms
+INFO  2026-09-17 11:00:46,046 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 11:00:46,047 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?v=ipBlvhoVq0pSD2MUVcTgGRt0imM35RIfwhvGdquSVxc - - -
+INFO  2026-09-17 11:00:46,047 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq - 200 - text/html;+charset=utf-8 52.4251ms
+INFO  2026-09-17 11:00:46,048 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252393892088663 - - -
+INFO  2026-09-17 11:00:46,049 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252393892088663 - - -
+INFO  2026-09-17 11:00:46,049 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Index.css'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Index.css'
+INFO  2026-09-17 11:00:46,049 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?v=ipBlvhoVq0pSD2MUVcTgGRt0imM35RIfwhvGdquSVxc - 200 4265 text/css 2.2098ms
+INFO  2026-09-17 11:00:46,053 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 11:00:46,054 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 11:00:46,055 [23   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2026-09-17 11:00:46,056 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2026-09-17 11:00:46,060 [23   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2026-09-17 11:00:46,061 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 5.5695ms
+INFO  2026-09-17 11:00:46,061 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 11:00:46,063 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252393892088663 - 200 11781 application/x-javascript 14.9513ms
+INFO  2026-09-17 11:00:46,084 [8    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2026-09-17 11:00:46,087 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 31.0649ms
+INFO  2026-09-17 11:00:46,088 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 11:00:46,092 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252393892088663 - 200 23721 application/x-javascript;+charset=utf-8 42.5743ms
+DEBUG 2026-09-17 11:00:46,100 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: L2Vi0Xgsb_0mkBVolTfAwA
+INFO  2026-09-17 11:00:46,101 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2026-09-17 11:00:46,101 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=LdkUxZ263JkaY-j2AJFkpg - 101 - - 241749.4190ms
+INFO  2026-09-17 11:00:46,143 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?v=ipBlvhoVq0pSD2MUVcTgGRt0imM35RIfwhvGdquSVxc - - -
+INFO  2026-09-17 11:00:46,144 [22   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Index.css was not modified
+INFO  2026-09-17 11:00:46,146 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/shared-layout.min.css?v=2JgH3l8w67_GazpOLzhgPLwDTROeYI-Dm8MfkKH0Vw0 - - -
+INFO  2026-09-17 11:00:46,146 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?v=ipBlvhoVq0pSD2MUVcTgGRt0imM35RIfwhvGdquSVxc - 304 - text/css 3.0529ms
+INFO  2026-09-17 11:00:46,146 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/img/logo.png - - -
+INFO  2026-09-17 11:00:46,151 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/img/logo.png'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\img\logo.png'
+INFO  2026-09-17 11:00:46,151 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/img/avatar.png - - -
+INFO  2026-09-17 11:00:46,151 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/img/logo.png - 200 4327 image/png 4.4789ms
+INFO  2026-09-17 11:00:46,155 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/img/avatar.png'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\img\avatar.png'
+INFO  2026-09-17 11:00:46,156 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/img/avatar.png - 200 7587 image/png 5.0400ms
+INFO  2026-09-17 11:00:46,166 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/_Bundles/shared-layout.min.css'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\_Bundles\shared-layout.min.css'
+INFO  2026-09-17 11:00:46,198 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/shared-layout.min.css?v=2JgH3l8w67_GazpOLzhgPLwDTROeYI-Dm8MfkKH0Vw0 - 200 1698125 text/css 52.0133ms
+INFO  2026-09-17 11:00:46,200 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/ErrorHandler.js?v=jA6pNFGodYuNG8BESsh7Brxu_o3Z_GBsxyU8O3Y6fwY - - -
+INFO  2026-09-17 11:00:46,202 [22   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/ErrorHandler.js was not modified
+INFO  2026-09-17 11:00:46,202 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/ErrorHandler.js?v=jA6pNFGodYuNG8BESsh7Brxu_o3Z_GBsxyU8O3Y6fwY - 304 - text/javascript 1.9794ms
+INFO  2026-09-17 11:00:46,222 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/.well-known/appspecific/com.chrome.devtools.json - - -
+INFO  2026-09-17 11:00:46,231 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/.well-known/appspecific/com.chrome.devtools.json - 404 - - 8.7639ms
+INFO  2026-09-17 11:00:46,231 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44312/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+INFO  2026-09-17 11:00:46,277 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 11:00:46,282 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 11:00:46,283 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 11:00:46,284 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 11.8572ms
+INFO  2026-09-17 11:00:46,292 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Edit.js?v=n1uNsrum_Xz2vktF6ZqCNbacRH7bOC6biHb_7O_dsdQ - - -
+INFO  2026-09-17 11:00:46,292 [16   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Edit.js was not modified
+INFO  2026-09-17 11:00:46,293 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Edit.js?v=n1uNsrum_Xz2vktF6ZqCNbacRH7bOC6biHb_7O_dsdQ - 304 - text/javascript 1.2517ms
+INFO  2026-09-17 11:00:46,293 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Create.js?v=jyJOR1iOLpHTYxlcjmHgVYeIupPls-fZdOpvu7xUgKE - - -
+INFO  2026-09-17 11:00:46,294 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Create.js was not modified
+INFO  2026-09-17 11:00:46,295 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Create.js?v=jyJOR1iOLpHTYxlcjmHgVYeIupPls-fZdOpvu7xUgKE - 304 - text/javascript 1.3176ms
+INFO  2026-09-17 11:00:46,295 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Table.js?v=2MWiZn6Abss299WvZJ8fyz0nFkil8LMwlt3MSdYtT90 - - -
+INFO  2026-09-17 11:00:46,298 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Table.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Table.js'
+INFO  2026-09-17 11:00:46,299 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Table.js?v=2MWiZn6Abss299WvZJ8fyz0nFkil8LMwlt3MSdYtT90 - 200 12916 text/javascript 3.6812ms
+INFO  2026-09-17 11:00:46,311 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - - -
+INFO  2026-09-17 11:00:46,312 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Index.js was not modified
+INFO  2026-09-17 11:00:46,313 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=VKeUfH5E-m_36wZIOdlUhQ - - -
+INFO  2026-09-17 11:00:46,313 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - 304 - text/javascript 1.8195ms
+INFO  2026-09-17 11:00:46,317 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252393892088663 - - -
+INFO  2026-09-17 11:00:46,318 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-09-17 11:00:46,319 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript;+charset=utf-8 1.6494ms
+INFO  2026-09-17 11:00:46,320 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/shared-layout.min.js?v=H_XzyY4rCY373YsXKpNFLwVd0siXgaQs2qmDCbJH-eE - - -
+INFO  2026-09-17 11:00:46,321 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2026-09-17 11:00:46,329 [23   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"Jy3rMm-peWsaGCJX86aR8A","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T11:00:46.3286609+07:00","Properties":{}}
+INFO  2026-09-17 11:00:46,331 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - - -
+INFO  2026-09-17 11:00:46,338 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 11:00:46,339 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2026-09-17 11:00:46,349 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252393892088663 - - -
+INFO  2026-09-17 11:00:46,359 [16   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2026-09-17 11:00:46,359 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 20.4131ms
+INFO  2026-09-17 11:00:46,361 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 11:00:46,362 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252393892088663 - 200 11781 application/x-javascript 44.4194ms
+INFO  2026-09-17 11:00:46,362 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 11:00:46,363 [23   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2026-09-17 11:00:46,377 [27   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/_Bundles/shared-layout.min.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\_Bundles\shared-layout.min.js'
+INFO  2026-09-17 11:00:46,383 [23   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2026-09-17 11:00:46,385 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 21.1488ms
+INFO  2026-09-17 11:00:46,385 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 11:00:46,386 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252393892088663 - 200 23721 application/x-javascript;+charset=utf-8 36.8964ms
+INFO  2026-09-17 11:00:46,388 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/ErrorHandler.js?v=jA6pNFGodYuNG8BESsh7Brxu_o3Z_GBsxyU8O3Y6fwY - - -
+INFO  2026-09-17 11:00:46,390 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 58.2555ms
+INFO  2026-09-17 11:00:46,390 [26   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/ErrorHandler.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\ErrorHandler.js'
+INFO  2026-09-17 11:00:46,391 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/ErrorHandler.js?v=jA6pNFGodYuNG8BESsh7Brxu_o3Z_GBsxyU8O3Y6fwY - 200 3860 text/javascript 2.3137ms
+INFO  2026-09-17 11:00:46,425 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/shared-layout.min.js?v=H_XzyY4rCY373YsXKpNFLwVd0siXgaQs2qmDCbJH-eE - 200 1801966 text/javascript 105.0168ms
+INFO  2026-09-17 11:00:46,428 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Create.js?v=jyJOR1iOLpHTYxlcjmHgVYeIupPls-fZdOpvu7xUgKE - - -
+INFO  2026-09-17 11:00:46,429 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Table.js?v=2MWiZn6Abss299WvZJ8fyz0nFkil8LMwlt3MSdYtT90 - - -
+INFO  2026-09-17 11:00:46,430 [26   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Table.js was not modified
+INFO  2026-09-17 11:00:46,430 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Table.js?v=2MWiZn6Abss299WvZJ8fyz0nFkil8LMwlt3MSdYtT90 - 304 - text/javascript 0.9442ms
+INFO  2026-09-17 11:00:46,430 [16   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Create.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Create.js'
+INFO  2026-09-17 11:00:46,431 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Create.js?v=jyJOR1iOLpHTYxlcjmHgVYeIupPls-fZdOpvu7xUgKE - 200 4135 text/javascript 3.0549ms
+INFO  2026-09-17 11:00:46,446 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Edit.js?v=n1uNsrum_Xz2vktF6ZqCNbacRH7bOC6biHb_7O_dsdQ - - -
+INFO  2026-09-17 11:00:46,446 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - - -
+INFO  2026-09-17 11:00:46,467 [26   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Index.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Index.js'
+INFO  2026-09-17 11:00:46,467 [23   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Faq/Edit.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\Faq\Edit.js'
+INFO  2026-09-17 11:00:46,467 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Edit.js?v=n1uNsrum_Xz2vktF6ZqCNbacRH7bOC6biHb_7O_dsdQ - 200 4389 text/javascript 21.3433ms
+INFO  2026-09-17 11:00:46,467 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - 200 2188 text/javascript 21.1354ms
+DEBUG 2026-09-17 11:00:46,532 [23   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: Jy3rMm-peWsaGCJX86aR8A
+INFO  2026-09-17 11:00:46,532 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - application/json -
+INFO  2026-09-17 11:00:46,541 [26   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 11:00:46,542 [26   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Faq"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Demo.Faqs.Dto.FrequentlyAskedQuestionDto]] GetAllAsync(Demo.Faqs.Dto.PagedFaqResultRequestDto) on controller Demo.Faqs.FaqAppService (Demo.Application).
+INFO  2026-09-17 11:00:46,577 [27   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-09-17 11:00:46,578 [27   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application) in 35.0897ms
+INFO  2026-09-17 11:00:46,578 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 11:00:46,578 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - 200 - application/json;+charset=utf-8 46.0604ms
+INFO  2026-09-17 11:00:46,682 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 11:00:46,682 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/push.js.map - - -
+INFO  2026-09-17 11:00:46,686 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/push.js.map - 404 - - 4.2636ms
+INFO  2026-09-17 11:00:46,687 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44312/view-resources/Views/_Bundles/push.js.map, Response status code: 404
+INFO  2026-09-17 11:00:46,690 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 11:00:46,692 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 11:00:46,692 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 9.6078ms
+INFO  2026-09-17 11:00:46,728 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/dist/fonts/fa-solid-900.woff2 - - -
+INFO  2026-09-17 11:00:46,730 [27   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/dist/fonts/fa-solid-900.woff2'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\dist\fonts\fa-solid-900.woff2'
+INFO  2026-09-17 11:00:46,732 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/dist/fonts/fa-solid-900.woff2 - 200 78196 font/woff2 3.6129ms
+INFO  2026-09-17 11:00:47,146 [26   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=S54NcwEBo3GSshHzSP0U6Q - - -
+INFO  2026-09-17 11:00:47,148 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/dist/img/famfamfam-flags.png - - -
+INFO  2026-09-17 11:00:47,150 [26   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2026-09-17 11:00:47,152 [27   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/dist/img/famfamfam-flags.png'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\dist\img\famfamfam-flags.png'
+INFO  2026-09-17 11:00:47,153 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-09-17 11:00:47,155 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript;+charset=utf-8 1.9809ms
+INFO  2026-09-17 11:00:47,155 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/dist/img/famfamfam-flags.png - 200 78508 image/png 7.4804ms
+INFO  2026-09-17 11:00:47,156 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - - -
+INFO  2026-09-17 11:00:47,170 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 13.9249ms
+DEBUG 2026-09-17 11:00:47,172 [16   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"OmURpynLgfojkkmn8OhsFw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T11:00:47.1721779+07:00","Properties":{}}
+INFO  2026-09-17 11:00:47,279 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - application/json -
+DEBUG 2026-09-17 11:00:47,280 [23   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: OmURpynLgfojkkmn8OhsFw
+INFO  2026-09-17 11:00:47,282 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 11:00:47,282 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Faq"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Demo.Faqs.Dto.FrequentlyAskedQuestionDto]] GetAllAsync(Demo.Faqs.Dto.PagedFaqResultRequestDto) on controller Demo.Faqs.FaqAppService (Demo.Application).
+INFO  2026-09-17 11:00:47,298 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-09-17 11:00:47,299 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application) in 16.5518ms
+INFO  2026-09-17 11:00:47,299 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 11:00:47,299 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - 200 - application/json;+charset=utf-8 20.2280ms
+DEBUG 2026-09-17 11:01:09,137 [23   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: Jy3rMm-peWsaGCJX86aR8A
+INFO  2026-09-17 11:01:09,138 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2026-09-17 11:01:09,138 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=VKeUfH5E-m_36wZIOdlUhQ - 101 - - 22825.1438ms
+DEBUG 2026-09-17 11:01:13,055 [31   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: OmURpynLgfojkkmn8OhsFw
+INFO  2026-09-17 11:01:13,055 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2026-09-17 11:01:13,056 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=S54NcwEBo3GSshHzSP0U6Q - 101 - - 25909.5236ms
+DEBUG 2026-09-17 11:02:48,895 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2026-09-17 11:02:48,905 [2    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2026-09-17 11:02:48,919 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.Web.Startup.DemoWebMvcModule, Demo.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,920 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.DemoWebCoreModule, Demo.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,921 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.DemoApplicationModule, Demo.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,921 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.DemoCoreModule, Demo.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,921 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,922 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,922 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,923 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,923 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Demo.EntityFrameworkCore.DemoEntityFrameworkModule, Demo.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,923 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,924 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,924 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,925 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,925 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,925 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:48,927 [2    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2026-09-17 11:02:48,962 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-09-17 11:02:48,962 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-09-17 11:02:48,962 [2    ] o.Configuration.LanguageManagementConfig - Converted Demo (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-09-17 11:02:48,962 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-09-17 11:02:49,203 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Demo.EntityFrameworkCore.DemoDbContext, Demo.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-09-17 11:02:49,340 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2026-09-17 11:02:49,388 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2026-09-17 11:02:49,393 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2026-09-17 11:02:49,397 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Demo
+DEBUG 2026-09-17 11:02:49,399 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2026-09-17 11:02:49,407 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2026-09-17 11:02:49,409 [2    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Demo.MultiTenancy.Tenant, Demo.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Demo.Authorization.Users.User, Demo.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2026-09-17 11:02:49,598 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2026-09-17 11:02:49,598 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Users.Dto.CreateUserDto
+DEBUG 2026-09-17 11:02:49,601 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Users.Dto.UserDto
+DEBUG 2026-09-17 11:02:49,602 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2026-09-17 11:02:49,602 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Sessions.Dto.UserLoginInfoDto
+DEBUG 2026-09-17 11:02:49,602 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Roles.Dto.PermissionDto
+DEBUG 2026-09-17 11:02:49,602 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2026-09-17 11:02:49,603 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.MultiTenancy.Dto.TenantDto
+DEBUG 2026-09-17 11:02:49,603 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Faqs.Dto.CreateFrequentlyAskedQuestionInput
+DEBUG 2026-09-17 11:02:49,603 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Faqs.Dto.FrequentlyAskedQuestionDto
+DEBUG 2026-09-17 11:02:49,603 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Faqs.Dto.UpdateFrequentlyAskedQuestionInput
+DEBUG 2026-09-17 11:02:49,603 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2026-09-17 11:02:49,603 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Demo.Web.Models.Roles.EditRoleModalViewModel
+WARN  2026-09-17 11:02:50,575 [2    ] oft.EntityFrameworkCore.Model.Validation - The 'FaqStatus' property 'Status' on entity type 'FrequentlyAskedQuestion' is configured with a database-generated default, but has no configured sentinel value. The database-generated default will always be used for inserts when the property has the value '0', since this is the CLR default for the 'FaqStatus' type. Consider using a nullable type, using a nullable backing field, or setting the sentinel value for the property to ensure the database default is used when, and only when, appropriate. See https://aka.ms/efcore-docs-default-values for more information.
+INFO  2026-09-17 11:02:51,823 [2    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,fa,ja,zh-Hans
+INFO  2026-09-17 11:02:52,020 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/ - - -
+INFO  2026-09-17 11:02:52,068 [2    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2026-09-17 11:02:52,069 [2    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2026-09-17 11:02:52,069 [2    ] Microsoft.Hosting.Lifetime               - Content root path: D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc
+INFO  2026-09-17 11:02:52,170 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.HomeController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 11:02:52,190 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Demo.Web.Controllers.HomeController (Demo.Web.Mvc).
+INFO  2026-09-17 11:02:52,437 [14   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-09-17 11:02:52,991 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 543.4348ms.
+INFO  2026-09-17 11:02:52,993 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.HomeController.Index (Demo.Web.Mvc) in 802.2068ms
+INFO  2026-09-17 11:02:52,993 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.HomeController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 11:02:53,001 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/ - 200 - text/html;+charset=utf-8 981.7605ms
+INFO  2026-09-17 11:02:53,120 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252397694105498 - - -
+INFO  2026-09-17 11:02:53,121 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252397694105498 - - -
+INFO  2026-09-17 11:02:53,123 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/home-index.min.js?v=W1pVI3cgZT_G5nvQPqaLU-Zndzb3L9GAhP8FM7W-DaA - - -
+INFO  2026-09-17 11:02:53,127 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-09-17 11:02:53,129 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - - -
+INFO  2026-09-17 11:02:53,131 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript;+charset=utf-8 3.9591ms
+INFO  2026-09-17 11:02:53,141 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 11:02:53,143 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 11:02:53,155 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2026-09-17 11:02:53,157 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2026-09-17 11:02:53,157 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/_Bundles/home-index.min.js'. Physical path: 'D:\IT\dotnet_workspace\demo\aspnet-core\src\Demo.Web.Mvc\wwwroot\view-resources\Views\_Bundles\home-index.min.js'
+INFO  2026-09-17 11:02:53,167 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/home-index.min.js?v=W1pVI3cgZT_G5nvQPqaLU-Zndzb3L9GAhP8FM7W-DaA - 200 407146 text/javascript 43.6284ms
+INFO  2026-09-17 11:02:53,180 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 50.7645ms
+INFO  2026-09-17 11:02:53,223 [16   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2026-09-17 11:02:53,225 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 67.7996ms
+INFO  2026-09-17 11:02:53,226 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 11:02:53,226 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252397694105498 - 200 11781 application/x-javascript 106.4718ms
+INFO  2026-09-17 11:02:53,309 [16   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2026-09-17 11:02:53,312 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 156.4187ms
+INFO  2026-09-17 11:02:53,312 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 11:02:53,314 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252397694105498 - 200 23721 application/x-javascript;+charset=utf-8 192.3965ms
+INFO  2026-09-17 11:02:53,415 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 11:02:53,427 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 11:02:53,433 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 11:02:53,436 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 20.1902ms
+INFO  2026-09-17 11:02:53,571 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=9LIRKzoHi38MATcimquXnw - - -
+INFO  2026-09-17 11:02:53,601 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2026-09-17 11:02:53,690 [16   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"1xFqNvlo6pp_v0YPcpkDnQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T11:02:53.6691389+07:00","Properties":{}}
+DEBUG 2026-09-17 11:02:53,705 [16   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 1xFqNvlo6pp_v0YPcpkDnQ
+INFO  2026-09-17 11:03:23,605 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq - - -
+INFO  2026-09-17 11:03:23,617 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 11:03:23,621 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Faq", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 11:03:23,661 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+INFO  2026-09-17 11:03:23,791 [16   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 132.5194ms.
+INFO  2026-09-17 11:03:23,791 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc) in 169.7234ms
+INFO  2026-09-17 11:03:23,791 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.Index (Demo.Web.Mvc)'
+INFO  2026-09-17 11:03:23,792 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq - 200 - text/html;+charset=utf-8 186.7298ms
+DEBUG 2026-09-17 11:03:23,809 [23   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 1xFqNvlo6pp_v0YPcpkDnQ
+INFO  2026-09-17 11:03:23,812 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2026-09-17 11:03:23,812 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/1.1 GET https://localhost:44312/signalr?id=9LIRKzoHi38MATcimquXnw - 101 - - 30241.4628ms
+INFO  2026-09-17 11:03:23,858 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252397694105498 - - -
+INFO  2026-09-17 11:03:23,858 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?v=ipBlvhoVq0pSD2MUVcTgGRt0imM35RIfwhvGdquSVxc - - -
+INFO  2026-09-17 11:03:23,858 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252397694105498 - - -
+INFO  2026-09-17 11:03:23,861 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Index.css was not modified
+INFO  2026-09-17 11:03:23,862 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 11:03:23,863 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.css?v=ipBlvhoVq0pSD2MUVcTgGRt0imM35RIfwhvGdquSVxc - 304 - text/css 4.6068ms
+INFO  2026-09-17 11:03:23,863 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 11:03:23,863 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/ErrorHandler.js?v=jA6pNFGodYuNG8BESsh7Brxu_o3Z_GBsxyU8O3Y6fwY - - -
+INFO  2026-09-17 11:03:23,863 [23   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2026-09-17 11:03:23,864 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/ErrorHandler.js was not modified
+INFO  2026-09-17 11:03:23,864 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2026-09-17 11:03:23,864 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/ErrorHandler.js?v=jA6pNFGodYuNG8BESsh7Brxu_o3Z_GBsxyU8O3Y6fwY - 304 - text/javascript 0.9722ms
+INFO  2026-09-17 11:03:23,865 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-09-17 11:03:23,866 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Table.js?v=2MWiZn6Abss299WvZJ8fyz0nFkil8LMwlt3MSdYtT90 - - -
+INFO  2026-09-17 11:03:23,866 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - 200 14929 application/javascript;+charset=utf-8 1.0190ms
+INFO  2026-09-17 11:03:23,867 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Create.js?v=jyJOR1iOLpHTYxlcjmHgVYeIupPls-fZdOpvu7xUgKE - - -
+INFO  2026-09-17 11:03:23,867 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Table.js was not modified
+INFO  2026-09-17 11:03:23,867 [25   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Create.js was not modified
+INFO  2026-09-17 11:03:23,867 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Table.js?v=2MWiZn6Abss299WvZJ8fyz0nFkil8LMwlt3MSdYtT90 - 304 - text/javascript 1.5457ms
+INFO  2026-09-17 11:03:23,867 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Create.js?v=jyJOR1iOLpHTYxlcjmHgVYeIupPls-fZdOpvu7xUgKE - 304 - text/javascript 0.8497ms
+INFO  2026-09-17 11:03:23,870 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - - -
+INFO  2026-09-17 11:03:23,874 [23   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2026-09-17 11:03:23,874 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - - -
+INFO  2026-09-17 11:03:23,875 [27   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Faq/Index.js was not modified
+INFO  2026-09-17 11:03:23,876 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/Faq/Index.js?v=xVjkmhYe_QT57AmN2LHjls0g6pojexbd-UCRY_9Hp9I - 304 - text/javascript 1.6554ms
+INFO  2026-09-17 11:03:23,878 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 11.3609ms
+INFO  2026-09-17 11:03:23,878 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2026-09-17 11:03:23,879 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpServiceProxies/GetAll?v=639252397694105498 - 200 11781 application/x-javascript 20.4823ms
+INFO  2026-09-17 11:03:23,894 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 23.7793ms
+INFO  2026-09-17 11:03:23,897 [16   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2026-09-17 11:03:23,898 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 33.6562ms
+INFO  2026-09-17 11:03:23,898 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2026-09-17 11:03:23,900 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/AbpScripts/GetScripts?v=639252397694105498 - 200 23721 application/x-javascript;+charset=utf-8 41.8452ms
+INFO  2026-09-17 11:03:23,902 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - - 0
+INFO  2026-09-17 11:03:23,908 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2026-09-17 11:03:23,911 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2026-09-17 11:03:23,912 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44312/signalr/negotiate?negotiateVersion=1 - 200 316 application/json 10.1543ms
+INFO  2026-09-17 11:03:23,972 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET https://localhost:44312/signalr?id=csKT5ZuJ0Ci96BWXN_vztw - - -
+INFO  2026-09-17 11:03:23,977 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2026-09-17 11:03:24,009 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - application/json -
+INFO  2026-09-17 11:03:24,012 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 11:03:24,019 [16   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Faq"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Demo.Faqs.Dto.FrequentlyAskedQuestionDto]] GetAllAsync(Demo.Faqs.Dto.PagedFaqResultRequestDto) on controller Demo.Faqs.FaqAppService (Demo.Application).
+DEBUG 2026-09-17 11:03:24,022 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"ti85GMU5u2droYsvJGtoqQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2026-09-17T11:03:24.0214778+07:00","Properties":{}}
+DEBUG 2026-09-17 11:03:24,056 [14   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: ti85GMU5u2droYsvJGtoqQ
+INFO  2026-09-17 11:03:24,347 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-09-17 11:03:24,365 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application) in 345.8556ms
+INFO  2026-09-17 11:03:24,365 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 11:03:24,366 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=0&maxResultCount=10 - 200 - application/json;+charset=utf-8 356.6389ms
+INFO  2026-09-17 11:03:28,686 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/.well-known/appspecific/com.chrome.devtools.json - - -
+INFO  2026-09-17 11:03:28,690 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/.well-known/appspecific/com.chrome.devtools.json - 404 - - 4.4346ms
+INFO  2026-09-17 11:03:28,691 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44312/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+INFO  2026-09-17 11:03:29,122 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/push.js.map - - -
+INFO  2026-09-17 11:03:29,124 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/view-resources/Views/_Bundles/push.js.map - 404 - - 2.2975ms
+INFO  2026-09-17 11:03:29,124 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44312/view-resources/Views/_Bundles/push.js.map, Response status code: 404
+INFO  2026-09-17 11:03:41,765 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/Faq/ViewModal?faqId=31 - application/json -
+INFO  2026-09-17 11:03:41,771 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Web.Controllers.FaqController.ViewModal (Demo.Web.Mvc)'
+INFO  2026-09-17 11:03:41,776 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "ViewModal", controller = "Faq", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] ViewModal(Int32) on controller Demo.Web.Controllers.FaqController (Demo.Web.Mvc).
+INFO  2026-09-17 11:03:41,818 [14   ] c.ViewFeatures.PartialViewResultExecutor - Executing PartialViewResult, running view _ViewModal.
+INFO  2026-09-17 11:03:41,825 [14   ] c.ViewFeatures.PartialViewResultExecutor - Executed PartialViewResult - view _ViewModal executed in 7.5838ms.
+INFO  2026-09-17 11:03:41,825 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Web.Controllers.FaqController.ViewModal (Demo.Web.Mvc) in 49.3723ms
+INFO  2026-09-17 11:03:41,825 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Web.Controllers.FaqController.ViewModal (Demo.Web.Mvc)'
+WARN  2026-09-17 11:03:41,830 [14   ] ls.BrowserLink.Net.BrowserLinkMiddleware - Unable to configure Browser Link script injection on the response. 
+INFO  2026-09-17 11:03:41,831 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/Faq/ViewModal?faqId=31 - 200 - text/html;+charset=utf-8 65.5187ms
+INFO  2026-09-17 11:03:45,815 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=10&maxResultCount=10 - application/json -
+INFO  2026-09-17 11:03:45,821 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 11:03:45,823 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Faq"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Demo.Faqs.Dto.FrequentlyAskedQuestionDto]] GetAllAsync(Demo.Faqs.Dto.PagedFaqResultRequestDto) on controller Demo.Faqs.FaqAppService (Demo.Application).
+INFO  2026-09-17 11:03:45,863 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-09-17 11:03:45,864 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application) in 40.7674ms
+INFO  2026-09-17 11:03:45,864 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 11:03:45,864 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=10&maxResultCount=10 - 200 - application/json;+charset=utf-8 48.8376ms
+INFO  2026-09-17 11:03:49,675 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=30&maxResultCount=10 - application/json -
+INFO  2026-09-17 11:03:49,677 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 11:03:49,678 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Faq"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Demo.Faqs.Dto.FrequentlyAskedQuestionDto]] GetAllAsync(Demo.Faqs.Dto.PagedFaqResultRequestDto) on controller Demo.Faqs.FaqAppService (Demo.Application).
+INFO  2026-09-17 11:03:49,696 [14   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-09-17 11:03:49,697 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application) in 18.9299ms
+INFO  2026-09-17 11:03:49,697 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Demo.Faqs.FaqAppService.GetAllAsync (Demo.Application)'
+INFO  2026-09-17 11:03:49,697 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44312/api/services/app/Faq/GetAll?keyword=&status=&skipCount=30&maxResultCount=10 - 200 - application/json;+charset=utf-8 21.9830ms
